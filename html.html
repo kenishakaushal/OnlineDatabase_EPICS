@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPICS Database</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #8C1D40; /* ASU Maroon */
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #8C1D40;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            display: none; /* Hidden by default */
+        }
+
+        /* Show the first container on load */
+        #welcome-page {
+            display: block;
+        }
+
+        .header {
+            background-color: #FFC627; /* ASU Gold */
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 180px;
+        }
+
+        .welcome-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            background-color: #FFC627;
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #FFFFFF;
+            color: #000000;
+            border: none;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #D3D3D3;
+        }
+
+        .form-container {
+            background-color: #F2D1D1;
+            padding: 20px;
+            border-radius: 8px;
+            color: #000000;
+        }
+
+        .form-container label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #D3D3D3;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .form-container button {
+            background-color: #000000;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container button:hover {
+            background-color: #333333;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        .forgot-password a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div class="container" id="welcome-page">
+        <div class="header">
+            <img src="asu.png" alt="ASU Logo">
+        </div>
+        <div class="welcome-text">Welcome to the EPICS Database</div>
+        <button class="button" onclick="showPage('signup-page')">Sign Up</button>
+        <button class="button" onclick="showPage('signin-page')">Sign In</button>
+    </div>
+
+    <!-- Sign Up Page -->
+    <div class="container" id="signup-page">
+        <div class="header">
+            <img src="asu.png" alt="ASU Logo">
+        </div>
+        <div class="welcome-text">Welcome to the EPICS Database</div>
+        <p>Please create an account:</p>
+        <div class="form-container">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+    <!-- Sign In Page -->
+    <div class="container" id="signin-page">
+        <div class="header">
+            <img src="asu.png" alt="ASU Logo">
+        </div>
+        <div class="welcome-text">EPICS Database</div>
+        <div class="form-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign In</button>
+
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all containers
+            document.getElementById("welcome-page").style.display = "none";
+            document.getElementById("signup-page").style.display = "none";
+            document.getElementById("signin-page").style.display = "none";
+
+            // Show the selected page
+            document.getElementById(pageId).style.display = "block";
+        }
+    </script>
+</body>
+</html>
