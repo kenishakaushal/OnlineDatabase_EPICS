@@ -48,6 +48,10 @@ th {
     background-color: #916FA2;
 }
 
+.centered-div{
+    width: 50%; 
+    margin: 0 auto; 
+}
 
 .container {
     width: 80%;
