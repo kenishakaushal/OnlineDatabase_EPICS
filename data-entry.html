@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Entry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <img src="asu.png" alt="ASU Logo" class="logo">
-            <div class="profile-icon">&#x1F464;</div>
+<body class="bg-maroon text-center text-light">
+    <div class="container py-4">
+        <header class="d-flex justify-content-between align-items-center mb-4">
+            <img src="images/asu.png" alt="ASU Logo" class="logo">
+            <div class="profile-icon">
+                <i class="bi bi-person-circle fs-1"></i>
+            </div>
         </header>
-        <h1>Data</h1>
+
+        <div class="text-start my-3">
+            <a href="variables-selection.html" class="btn btn-secondary">Back</a>
+        </div>
+
+        <h1 class="highlighted-title mb-3">Data</h1>
         <p>Please input data</p>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>pH</th>
-                <th>Soil moisture content</th>
-                <th>Salinity of water</th>
-            </tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td></tr>
-        </table>
+
+        <div class="table-responsive my-4">
+            <table class="table table-bordered table-light text-dark">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Time</th>
+                        <th>pH</th>
+                        <th>Soil Moisture Content</th>
+                        <th>Salinity of Water</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="Enter time"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter pH"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter soil moisture"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter salinity"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="Enter time"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter pH"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter soil moisture"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter salinity"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="Enter time"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter pH"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter soil moisture"></td>
+                        <td><input type="text" class="form-control" placeholder="Enter salinity"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a id="submitBtn" href="analysis.html" class="btn btn-primary btn-lg mt-4">Submit</a>
+
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

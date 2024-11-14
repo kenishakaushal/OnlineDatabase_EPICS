@@ -10,58 +10,15 @@ body {
     color: #ffffff;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    background-color: #781f1f;
-    border-radius: 10px;
-    color: white;
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    width: 150px;
-}
-
-.profile-icon {
-    font-size: 24px;
-}
-
-h1 {
-    margin: 20px 0;
-    font-size: 24px;
-}
-
-.select-button {
-    background-color: #916FA2;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.select-button:hover {
-    background-color: #aa86b9;
-}
-
-.dropdown {
-    margin: 20px;
-}
-
-.dropdown label {
-    font-size: 18px;
-    display: block;
-    margin-bottom: 5px;
 }
 
 select {
@@ -90,3 +47,175 @@ th, td {
 th {
     background-color: #916FA2;
 }
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #781f1f;
+    border-radius: 10px;
+    color: white;
+}
+
+.image-container {
+    text-align: center; /* Centers the image horizontally */
+}
+
+.image-container img {
+    width: 50%; /* Adjust this value to resize the image */
+    max-width: 300px; /* Optional: Limit the maximum width */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.logo {
+    width: 150px;
+}
+
+.profile-icon {
+    font-size: 24px;
+}
+
+.select-button {
+    background-color: #916FA2;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.select-button:hover {
+    background-color: #aa86b9;
+}
+
+.dropdown {
+    margin: 20px;
+}
+
+.dropdown label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.form-control {
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button styling */
+.btn-secondary {
+    background-color: #6C757D;
+    border-color: #6C757D;
+}
+
+.form-select-lg {
+    background-color: #E6E6FA;
+    color: #000000;
+}
+
+.btn-purple {
+    background-color: #9B2D5D; /* Darker purple for buttons */
+    color: #FFFFFF;
+}
+
+.btn-choose {
+    width: 100%;
+    font-size: 18px;
+}
+
+#btn-newRecord{
+    background-color: #21c4a3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+
+}
+
+#btn-currentYear{
+    background-color: #9072b2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+
+}
+
+/* Submit button styling */
+.btn-primary {
+    background-color: #0055A5; /* ASU Blue */
+    border-color: #0055A5;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.button {
+    text-align: right;
+    background-color: #00BCD4;
+    color: #000000;
+    padding: 15px 32px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+#submitBtn {
+    color: #ffffff;
+    font-size: 1.25rem;
+    background-color: #398002; 
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  #backBtn{
+    /* text-align: center; */
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+  
+  }
+
+  .profile-icon {
+    color: #FFFFFF;
+}
+
+.calendar-icon {
+    color: #FFFFFF;
+}
+
+
+  /* Title styling*/
+  .highlighted-title {
+    background-color: #FFC72C; /* ASU Gold */
+    color: #8C1D40;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Table styling */
+.table-dark {
+    background-color: #333333; /* Dark header for table */
+}
+
+.table-light {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #DEE2E6;
+}
+
