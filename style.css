@@ -130,7 +130,7 @@ th {
     font-size: 18px;
 }
 
-#btn-newRecord{
+.btn-newRecord{
     background-color: #21c4a3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -182,7 +182,6 @@ th {
     font-weight: bold;
     padding: 12px 24px;
     border-radius: 5px;
-  
   }
 
   .profile-icon {
@@ -193,6 +192,71 @@ th {
     color: #FFFFFF;
 }
 
+/* edit profile styling*/
+.bg-maroon {
+    background-color: #800000 !important;
+}
+
+.card-header {
+    border-radius: 0;
+}
+
+.btn-light {
+    color: #800000;
+}
+
+.text-dark {
+    color: #000 !important;
+}
+
+.form-control {
+    background-color: #f8f9fa;
+    color: #000;
+    border-radius: 5px;
+}
+
+.list-unstyled a {
+    font-size: 1.2rem;
+}
+
+.list-unstyled a.text-secondary {
+    color: #cccccc;
+}
+
+/* pop up styling*/
+/* The Popup (Hidden by default) */
+.popupStyle {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Makes sure the popup appears on top */
+}
+
+/* Popup content */
+.popup-content {
+    background-color: rgb(137, 85, 85);
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Close Button */
+.close-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
   /* Title styling*/
   .highlighted-title {
