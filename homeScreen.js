@@ -23,14 +23,14 @@ function submitUserData() {
       email: email,
       password: password
     };
-  
+
     // Convert the object to a JSON string
     const jsonData = JSON.stringify(formData);
   
     // Log or use the JSON data as needed
     console.log(jsonData);
   
-    localStorage.setItem("formData", jsonData);
+    localStorage.setItem("dataForm", jsonData);
   }
 
 // sign in
