@@ -21,7 +21,7 @@
         </header>
 
         <div class="text-start my-3">
-            <a href="data-entry.html" class="btn btn-secondary">Back</a>
+            <a href="data-entry.html" class="btn btn-secondary" style="font-weight: bold;">Back</a>
         </div>
 
         <h1 class="highlighted-title mb-3">Analysis</h1>
@@ -33,12 +33,12 @@
                 <div class="popup-content">
                     <h3 class="highlighted-title mb-3">Choose at least one variable</h3>
                    
-                    <button class="button"> Time </button>
-                    <button class="button"> pH </button>
+                    <button class="button" onclick="toggleSelection(this)"> Time </button>
+                    <button class="button" onclick="toggleSelection(this)"> pH </button>
                     <br>
-                    <button class="button"> Soil Moisture Content </button>
-                    <button class="button"> Salinity of Water </button>
-
+                    <button class="button" onclick="toggleSelection(this)"> Soil Moisture Content </button>
+                    <button class="button" onclick="toggleSelection(this)"> Salinity of Water </button>
+                    <br>
                     <button class="close-btn" id="btn-closePopup">Close</button>
                 </div>
             </div>
@@ -65,7 +65,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="popUpVars.js"></script>
+    <script src="analysis.js"></script>
    
 </body>
 </html>

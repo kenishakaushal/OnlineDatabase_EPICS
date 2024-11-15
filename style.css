@@ -190,14 +190,20 @@ th {
     text-decoration: none;
   }
 
-  #backBtn{
+#backBtn{
     /* text-align: center; */
     font-weight: bold;
     padding: 12px 24px;
     border-radius: 5px;
-  }
+}
 
-  .profile-icon {
+.button.selected{
+    background-color: #5eda00;
+    color: white;
+
+}
+
+.profile-icon {
     color: #FFFFFF;
 }
 
@@ -269,6 +275,8 @@ th {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
+    padding:10px 20px;
 }
 
   /* Title styling*/
