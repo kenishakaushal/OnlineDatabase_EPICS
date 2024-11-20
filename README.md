@@ -46,7 +46,7 @@ The teams lack effective tools to analyze and improve the quality of their data 
 5. **Environmental Data Tools:**  
    - Enhance the platform to analyze environmental disturbances and their impact on team data.  
 
-#### Plans for the Rest of the Semester:  
+#### Plans for the Rest of the Semester/Next Semester:  
 - **Calendar Feature on the Analysis Page:**  
   - Users will be able to view data from previous days, months, and years using a calendar interface.  
   - Improvements over time will be shown at the bottom of the same page.  
